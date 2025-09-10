@@ -29,6 +29,72 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-b4abc4e1d6877d67383f2b6049bdd647.css">
   <link rel="stylesheet" href="big_logo_DigiTS.css">
@@ -235,16 +301,6 @@ Maciej Eder
 </ul></li>
 </ul>
 </section>
-<section id="reproducible-data-sources" class="slide level2">
-<h2>reproducible data sources</h2>
-<ul>
-<li><a href="https://www.distant-reading.net/eltec/">European Literary Text Collection (ELTeC)</a></li>
-<li><a href="https://dracor.org/">Drama Corpora Project (DraCor)</a>
-<ul>
-<li>the notion of Programmable Corpora</li>
-</ul></li>
-</ul>
-</section>
 <section id="restrictive-vs.-permissive-licenses" class="slide level2">
 <h2>restrictive vs.&nbsp;permissive licenses</h2>
 <ul>
@@ -272,18 +328,121 @@ Maciej Eder
 <h2></h2>
 
 <img data-src="img/Creative_commons_license_spectrum.png" class="r-stretch"></section>
-<section id="ssh-cloud-ssh-commons" class="slide level2">
-<h2>SSH cloud, SSH commons</h2>
-</section>
-<section id="git" class="slide level2">
-<h2>Git</h2>
-
-<img data-src="https://raw.githubusercontent.com/louim/in-case-of-fire/master/in_case_of_fire.png" class="r-stretch"></section>
-<section id="markdown" class="slide level2">
-<h2>markdown</h2>
-<p>https://markup.rocks/</p>
-
+<section id="reproducible-datasets" class="slide level2">
+<h2>reproducible datasets</h2>
+<ul>
+<li><a href="https://www.distant-reading.net/eltec/">European Literary Text Collection (ELTeC)</a></li>
+<li><a href="https://dracor.org/">Drama Corpora Project (DraCor)</a>
+<ul>
+<li>the notion of Programmable Corpora</li>
+</ul></li>
+</ul>
 </section></section>
+<section>
+<section id="markdown" class="title-slide slide level1 center">
+<h1>markdown</h1>
+
+</section>
+<section id="markdown-1" class="slide level2">
+<h2>markdown</h2>
+<ul>
+<li>lightweight markup language</li>
+<li>commonly used in blogs, documentation etc.</li>
+<li>gaining popularity in Open Science setups</li>
+<li>available in different flavors …</li>
+<li>… but core conventions are universal</li>
+</ul>
+</section>
+<section id="markdown-example-1" class="slide level2">
+<h2>markdown: example 1</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href=""></a>use double asterisks to indicate **bold font**</span>
+<span id="cb1-2"><a href=""></a>use underscores to get _italics_</span>
+<span id="cb1-3"><a href=""></a>for monospaced font, use `back apostrophes`</span>
+<span id="cb1-4"><a href=""></a>also, use the tilde to ~strikethrough~ </span>
+<span id="cb1-5"><a href=""></a>&gt; block quotations should begin with the '&gt;' sign at the beginning of the line</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>use double asterisks to indicate <strong>bold font</strong></p>
+<p>use underscores to get <em>italics</em></p>
+<p>for monospaced font, use <code>back apostrophes</code></p>
+<p>also, use the tilde to <sub>strikethrough</sub></p>
+<blockquote>
+<p>block quotations should begin with the ‘&gt;’ sign at the beginning of the line</p>
+</blockquote>
+</section>
+<section id="markdown-example-2" class="slide level2">
+<h2>markdown: example 2</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href=""></a># Heading 1 </span>
+<span id="cb2-2"><a href=""></a></span>
+<span id="cb2-3"><a href=""></a>## Heading 2 </span>
+<span id="cb2-4"><a href=""></a></span>
+<span id="cb2-5"><a href=""></a>This is the heading level used in the titles of these slides</span>
+<span id="cb2-6"><a href=""></a></span>
+<span id="cb2-7"><a href=""></a>### Heading 3</span>
+<span id="cb2-8"><a href=""></a></span>
+<span id="cb2-9"><a href=""></a>#### Heading 4</span>
+<span id="cb2-10"><a href=""></a></span>
+<span id="cb2-11"><a href=""></a>##### Heading 5</span>
+<span id="cb2-12"><a href=""></a></span>
+<span id="cb2-13"><a href=""></a>You get the point: the nested headings are marked with '#' characters</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<h3 id="heading-3">Heading 3</h3>
+<h4 id="heading-4">Heading 4</h4>
+<h5 id="heading-5">Heading 5</h5>
+<p>You get the point: the nested headings are marked with ‘#’ characters</p>
+</section>
+<section id="markdown-example-3" class="slide level2">
+<h2>markdown: example 3</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb3-1"><a href=""></a>- first item</span>
+<span id="cb3-2"><a href=""></a>    - it can be nested, of course</span>
+<span id="cb3-3"><a href=""></a>- second item</span>
+<span id="cb3-4"><a href=""></a>    - a subitem</span>
+<span id="cb3-5"><a href=""></a>        - a nested subitem</span>
+<span id="cb3-6"><a href=""></a>- third item</span>
+<span id="cb3-7"><a href=""></a>    1. numbered list?</span>
+<span id="cb3-8"><a href=""></a>    2. no problem</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li>first item
+<ul>
+<li>it can be nested, of course</li>
+</ul></li>
+<li>second item
+<ul>
+<li>a subitem
+<ul>
+<li>a nested subitem</li>
+</ul></li>
+</ul></li>
+<li>third item
+<ol type="1">
+<li>numbered list?</li>
+<li>no problem</li>
+</ol></li>
+</ul>
+</section>
+<section id="markdown-example-4" class="slide level2">
+<h2>markdown: example 4</h2>
+<p>That’s how links should be styled:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb4-1"><a href=""></a>[Link](http://a.com)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>and this is how images are included:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource txt number-lines code-with-copy"><code class="sourceCode default"><span id="cb5-1"><a href=""></a>![Image](http://url/a.png)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="markdown-resources" class="slide level2">
+<h2>markdown resources</h2>
+<ul>
+<li>learn markdown in 60 seconds: <a href="https://commonmark.org/help/">tutorial</a></li>
+<li>a simple markdown editor to play with your coding: <a href="https://markup.rocks/">markup.rocks</a></li>
+<li>a more advanced online tool to work collaboratively using markdown: <a href="https://hackmd.io/">hackMD</a></li>
+<li>source file of the <a href="https://raw.githubusercontent.com/computationalstylistics/HVEE.00.016/refs/heads/main/slides_2_Open_Science/index.md">current slideshow</a></li>
+</ul>
+</section></section>
+<section>
+<section id="versioning-git" class="title-slide slide level1 center">
+<h1>versioning (git)</h1>
+
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+
+
+<img data-src="https://raw.githubusercontent.com/louim/in-case-of-fire/master/in_case_of_fire.png" class="r-stretch"></section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="DigiTS-RGB-short-SMALL.svg" class="slide-logo"></p>

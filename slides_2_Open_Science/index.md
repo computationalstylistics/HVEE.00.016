@@ -87,11 +87,6 @@ Most people don’t think of convenience as a serious criterion. Later in his ca
     - general terms of use, e.g. CC0 license
 
 
-## reproducible data sources
-
-- [European Literary Text Collection (ELTeC)](https://www.distant-reading.net/eltec/)
-- [Drama Corpora Project (DraCor)](https://dracor.org/)
-    - the notion of Programmable Corpora
 
 
 ## restrictive vs. permissive licenses
@@ -108,20 +103,141 @@ Most people don’t think of convenience as a serious criterion. Later in his ca
     - see also: Apache License, BSD License, MIT License, etc.
 
 
+
 ##
 
 ![](img/Creative_commons_license_spectrum.png)
 
 
+## reproducible datasets
 
-## SSH cloud, SSH commons
+- [European Literary Text Collection (ELTeC)](https://www.distant-reading.net/eltec/)
+- [Drama Corpora Project (DraCor)](https://dracor.org/)
+    - the notion of Programmable Corpora
 
-## Git
 
-![](https://raw.githubusercontent.com/louim/in-case-of-fire/master/in_case_of_fire.png)
+
+# markdown
+
 
 ## markdown
 
-https://markup.rocks/
+- lightweight markup language
+- commonly used in blogs, documentation etc.
+- gaining popularity in Open Science setups
+- available in different flavors ...
+- ... but core conventions are universal
+
+## markdown: example 1
+
+``` txt
+use double asterisks to indicate **bold font**
+use underscores to get _italics_
+for monospaced font, use `back apostrophes`
+also, use the tilde to ~strikethrough~ 
+> block quotations should begin with the '>' sign at the beginning of the line
+```
+
+use double asterisks to indicate **bold font**
+
+use underscores to get _italics_
+
+for monospaced font, use `back apostrophes`
+
+also, use the tilde to ~strikethrough~ 
+
+> block quotations should begin with the '>' sign at the beginning of the line
+
+
+
+## markdown: example 2
+
+``` txt
+# Heading 1	
+
+## Heading 2 
+
+This is the heading level used in the titles of these slides
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+You get the point: the nested headings are marked with '#' characters
+
+```
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+You get the point: the nested headings are marked with '#' characters
+
+
+
+## markdown: example 3
+
+``` txt
+- first item
+    - it can be nested, of course
+- second item
+    - a subitem
+        - a nested subitem
+- third item
+    1. numbered list?
+    2. no problem
+
+```
+
+- first item
+    - it can be nested, of course
+- second item
+    - a subitem
+        - a nested subitem
+- third item
+    1. numbered list?
+    2. no problem
+
+
+
+## markdown: example 4
+
+That's how links should be styled:
+
+``` txt
+[Link](http://a.com)
+```
+
+and this is how images are included:
+
+``` txt
+![Image](http://url/a.png)
+
+```
+
+
+## markdown resources
+
+
+- learn markdown in 60 seconds: [tutorial](https://commonmark.org/help/)
+- a simple markdown editor to play with your coding: [markup.rocks](https://markup.rocks/)
+- a more advanced online tool to work collaboratively using markdown: [hackMD](https://hackmd.io/)
+- source file of the [current slideshow](https://raw.githubusercontent.com/computationalstylistics/HVEE.00.016/refs/heads/main/slides_2_Open_Science/index.md)
+
+
+
+# versioning (git)
+
+
+##
+
+![](https://raw.githubusercontent.com/louim/in-case-of-fire/master/in_case_of_fire.png)
+
+
+
 
 
