@@ -19,6 +19,8 @@ format:
 - reproducibility
 - Open Science
 - FAIR principle
+- markdown
+- versioning & git repos
 
 
 
