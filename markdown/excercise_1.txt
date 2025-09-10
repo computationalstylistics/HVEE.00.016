@@ -1,0 +1,53 @@
+**Example:  Applying Markdown**
+
+Let's look at a simple example.  Below is a section of text.  Your task is to add the appropriate Markdown syntax to achieve the following formatting:
+
+1.  The title "Benefits of Markdown" should be a level 1 heading.
+2.  The introductory paragraph should be italicized.
+3.  The "Why Use Markdown?" section should be a level 2 heading.
+4.  The bullet points under "Versatility" should be formatted as a list.
+
+```text
+# The Benefits of Markdown
+
+This is an introductory paragraph explaining why Markdown is a valuable tool.  It's easy to learn and use, and it offers significant advantages over plain text formatting.
+
+# Why Use Markdown?
+
+*   Markdown is highly portable.
+*   It can be converted to various formats.
+*   It's easy to learn and use.
+*   It's widely supported across platforms.
+
+```
+
+**Your Task:**
+
+Add the necessary Markdown syntax to the code block above to achieve the desired formatting.  You can use the following Markdown elements:
+
+*   `#` for level 1 headings
+*   `##` for level 2 headings
+*   `*` for italic text
+*   `-` for list items
+
+**Expected Output (after applying Markdown):**
+
+```markdown
+# The Benefits of Markdown
+
+*This is an introductory paragraph explaining why Markdown is a valuable tool. It's easy to learn and use, and it offers significant advantages over plain text formatting.*
+
+## Why Use Markdown?
+
+- Markdown is highly portable.
+- It can be converted to various formats.
+- It's easy to learn and use.
+- It's widely supported across platforms.
+```
+
+**Conclusion**
+
+Markup languages like Markdown are essential tools for anyone who creates and manages text.  They provide a structured way to present information, making it more readable, portable, and versatile.  By understanding the basics of markup, you can
+significantly improve your efficiency and the quality of your written communication.  This is just an introduction; there are many more advanced features of Markdown to explore!
+
+
