@@ -135,7 +135,7 @@ use double asterisks to indicate **bold font**
 use underscores to get _italics_
 for monospaced font, use `back apostrophes`
 also, use the tilde to ~strikethrough~ 
-> block quotations should begin with the '>' sign at the beginning of the line
+> block quotations should begin with the '>' sign at the beginning of the line; the quotation itself can be actually quite long
 ```
 
 use double asterisks to indicate **bold font**
@@ -146,14 +146,13 @@ for monospaced font, use `back apostrophes`
 
 also, use the tilde to ~strikethrough~ 
 
-> block quotations should begin with the '>' sign at the beginning of the line
-
+> block quotations should begin with the '>' sign at the beginning of the line; the quotation itself can be actually quite long
 
 
 ## markdown: example 2
 
 ``` txt
-# Heading 1	
+# Heading 1 
 
 ## Heading 2 
 
@@ -230,12 +229,37 @@ and this is how images are included:
 
 
 
-# versioning (git)
+# versioning & git repos
 
+
+## Git
+
+- distributed version control software system
+- capable of managing versions of source code or data
+- often used to control source code in collaborative setups
+- used either in commandline mode, or via graphic interfaces
+- e.g., here's a simple commandline interaction:
+
+``` txt
+git status   # this shows which files were changed
+git add *    # this stashes all the changed files
+git commit   # this freezes the files, and creates a new 'snapshot'
+git push     # and finally, this sends the files to the repository
+```
 
 ##
 
 ![](https://raw.githubusercontent.com/louim/in-case-of-fire/master/in_case_of_fire.png)
+
+
+
+## GitHub and GitLab: repositories
+
+- GitHub repository of [this very course HVEE.00.016](https://github.com/computationalstylistics/HVEE.00.016/)
+- general [GitHub](https://github.com/)
+- [GitLab server](https://hpc.ut.ee/services/other-services/Gitlab/) run by the University of Tartu
+- general [GitLab](https://gitlab.com/)
+
 
 
 
