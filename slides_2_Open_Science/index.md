@@ -259,7 +259,7 @@ git push     # and finally, this sends the files to the repository
 
 - GitHub repository of [this very course HVEE.00.016](https://github.com/computationalstylistics/HVEE.00.016/)
 - general [GitHub](https://github.com/)
-- [GitLab server](https://hpc.ut.ee/services/other-services/Gitlab) run by the University of Tartu
+- [GitLab server](https://gitlab.cs.ut.ee/) run by the University of Tartu
 - general [GitLab](https://gitlab.com/)
 
 
